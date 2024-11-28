@@ -14,12 +14,12 @@ describe('KanbanBoard', () => {
     render(<KanbanBoard />);
     const addButton = screen.getByText(/Add Task/i);
     
-    // Simulate a user adding a task
+   
     fireEvent.click(addButton);
-    const input = window.prompt;  // Mock the prompt
-    if (input) input('New Task');  // Simulate the user entering a task name
+    const input = window.prompt;  
+    if (input) input('New Task');  
     
-    // Check if the task appears in the To Do column
+  
     expect(screen.getByText(/New Task/i)).toBeInTheDocument();
   });
 });
