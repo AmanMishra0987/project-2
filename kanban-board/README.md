@@ -47,6 +47,10 @@ export default tseslint.config({
     ...react.configs['jsx-runtime'].rules,
   },
 })
+## start
+npm run dev
+
+
 
 ## Technologies Used
  React: JavaScript library for building user interfaces.
